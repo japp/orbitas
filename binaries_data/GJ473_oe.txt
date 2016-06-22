@@ -1,0 +1,20 @@
+#-----------------------------------------------
+# Elementos orbitales de GJ473 
+# P      Periodo (años)
+# T      Paso por el periastro (años)
+# e      Eccentricidad
+# a      Semieje mayor (seg de arco)
+# i      Inclinacion
+# O      Posicion del nodo ascendente (Omega, grados)
+# w      Argumento del periastro (omega, grados)
+#-----------------------------------------------
+
+name        GJ473
+P           15.643
+T           1992.297
+a           0.926
+e           0.295
+i           103.000
+O           143.480
+w           347.200
+equinox     2000

@@ -1,0 +1,46 @@
+
+
+ORBITA GJ660
+------------------------------------
+ Chi**2 =    809.28 for expected     14 +-  5.29
+ Reduced CHI =   7.60 P(Chi**2) = 0.000000
+ Element:   6 EPOCH            Fixed            51544.500000    0.000000
+ Element:   7 P                Adjustable       12704.406145  298.595062
+ Element:   8 T0               Adjustable       47174.140621  227.292984
+ Element:   9 Ecc              Adjustable           0.253664    0.066480
+ Element:  10 as               Adjustable           0.816090    0.068624
+ Element:  11 OM               Adjustable         135.007421   10.647128
+ Element:  12 om               Adjustable         232.120990   10.166596
+ Element:  13 i                Adjustable          31.796176   12.934144
+
+
+ Reduced CHI =   7.51 P(Chi**2) = 0.000000
+ Element:   6 EPOCH            Fixed            51544.500000    0.000000
+ Element:   7 P                Adjustable       12702.790152  297.955322
+ Element:   8 T0               Adjustable       47173.233338  221.940735
+ Element:   9 Ecc              Adjustable           0.257238    0.066467
+ Element:  10 as               Adjustable           0.819668    0.068985
+ Element:  11 OM               Adjustable         135.648068   10.207262
+ Element:  12 om               Adjustable         231.826781   10.052073
+ Element:  13 i                Adjustable          32.786313   12.506495
+
+CAmbio de unidades
+
+P = 12704.406145/365.2425  = 34.7790  +- 0.8157  años
+
+t = Time(47173.233338, format="mjd")
+T0 = t.byear
+#1988.0331460201269 +- 0.6076
+
+
+ORBIT> list mass
+WARNING: Standard errors have been rescaled by a large reduced Chi:   7.514
+They maybe unreliable. 
+You should probably adjust your measurement errors and repeat the fit
+Total Mass =  0.480923 +-0.210146 Solar masses (43.7%)
+ORBIT> 
+
+
+
+
+

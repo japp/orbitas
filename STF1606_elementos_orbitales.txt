@@ -1,0 +1,22 @@
+# Elementos orbitales de STF1606 - tomados de WDS
+
+oe_P = 1431.                  # Periodo (años)
+oe_T = 1988.32                # Paso por el periastro (años)
+oe_e = 0.7796                  # Excentricidad
+oe_a = 2.002                  # Semieje mayor (seg de arco)
+oe_i = 129.5                  # Inclinacion de la orbita (grados)
+oe_O_node = 122.2              # Posicion del nodo ascendente (Omega, grados)
+oe_o_peri = 256.7            # Argumento del periastro (omega, grados)
+oe_equinox = 2000              # Equinoccio
+
+Elementos orbitales de WDS observadas
+
+RA,Dec (J2000).... WDS....... DD............ HD....  *V1...*  pppp.pppppp*  aaa.aaaaa*  iii.iiii  OOO.OOOO*  TTTTT.TTTTTT*  e.eeeeee  ooo.oooo  EQNX
+
+121047.34+395329.5 12108+3953 STF1606        105824    7.44   1431.      y    2.002  a  129.5     122.2       1988.32    y  0.7796    256.7     2000
+
+
+
+175318.64+245929.4 17533+2459 A   235        163077    8.36     37.92    y    0.268  a   67.5      83.6       1967.84    y  0.480     177.0     2000
+204613.25+155425.8 20462+1554 STF2725        197913    7.54   2851.      y    7.364  a   66.0      20.9       1658.      y  0.18      276.3     1900
+

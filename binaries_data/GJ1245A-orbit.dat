@@ -1,0 +1,36 @@
+! GJ 1245
+! 
+! Medidas del 6th orbit catalog y Astralux+Fastcam
+!
+
+! Paralaje y error (arcsec)
+PAR 220E-3 1E-3
+
+EQUINOX     2000.000
+EPOCH             51544.5        0.0000   Fixed           
+P                 6000.0        500.0    Adjustable      
+T0                45300         600.0    Adjustable      
+Ecc                  0.32        0.2      Adjustable      
+as                   0.8         0.3      Adjustable      
+OM                  80.0         20       Adjustable      
+om                  38.0         50       Adjustable      
+i                   135.0        70       Adjustable    
+    
+
+! Medidas astrometricas
+!          Frac. anho    rho       theta     err_rho   err_theta
+!rho-theta  Y1984.857    0.39         0.      0.04         180.
+!rho-theta  Y1986.713    0.81        90.      0.08         180.
+!rho-theta  Y1987.433    0.90        90.      0.09         180. 
+!rho-theta  Y1987.464    0.90        90.      0.09         180.
+!rho-theta  Y1987.766    1.00        90.      0.10         180.
+!rho-theta  Y1986.714    0.81       85.3       0.08           0.5     
+rho-theta  Y1987.450    0.90       89.5      0.09           0.5
+rho-theta  Y1997.483    0.609      304.27    0.007          1.34 
+rho-theta  Y1997.781    0.604      296.44    0.007          1.27 
+rho-theta  Y2003.123    0.738      106.7     0.006          1.5  
+rho-theta  Y2005.4      1.010       78.7     0.01           1.0   ! Luckycam
+rho-theta  Y2008.434    1.009       49.8     0.007          0.7   ! Astralux
+rho-theta  Y2013.503    0.609      329.5     0.007          0.7   ! Astralux
+
+

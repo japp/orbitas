@@ -1,0 +1,59 @@
+
+RESULTADOS DE AJUSTES
+---------------------
+
+Cambio de unidades temporales, de 2 400 000-jd a byear
+
+t = Time(2400000+51544.500, format='jd')
+t.byear
+
+
+GJ 747
+
+
+ Element:   6 EPOCH            Fixed            2000.0    0.000000
+ Element:   7 P                Adjustable        5.75    0.05
+ Element:   8 T0               Adjustable       1991.22   0.15
+ Element:   9 Ecc              Adjustable           0.252006    0.036115
+ Element:  10 as               Adjustable           0.291542    0.005621
+ Element:  11 OM               Adjustable          84.723709    1.041159
+ Element:  12 om               Adjustable         332.647158    9.194027
+ Element:  13 i                Adjustable          77.492566    0.787259
+ 
+ 
+ GJ660
+
+  Reduced CHI =   7.60 P(Chi**2) = 0.000000
+ Element:   6 EPOCH            Fixed            51544.500000    0.000000
+ Element:   7 P                Adjustable       12704.406145  298.595062
+ Element:   8 T0               Adjustable       47174.140621  227.292984
+ Element:   9 Ecc              Adjustable           0.253664    0.066480
+ Element:  10 as               Adjustable           0.816090    0.068624
+ Element:  11 OM               Adjustable         135.007421   10.647128
+ Element:  12 om               Adjustable         232.120990   10.166596
+ Element:  13 i                Adjustable          31.796176   12.934144
+
+Total Mass =  0.474531 +-0.207276 Solar masses (43.7%)
+
+
+
+GJ 804
+
+
+  Reduced CHI =   7.78 P(Chi**2) = 0.000000
+ Element:   6 EPOCH            Fixed            51544.500000    0.000000
+ Element:   7 P                Adjustable       10473.086244  997.583923
+ Element:   8 T0               Adjustable       58379.956897 2033.192261
+ Element:   9 Ecc              Adjustable           0.086103    0.126545
+ Element:  10 as               Adjustable           0.292587    0.036845
+ Element:  11 OM               Adjustable          34.685450   10.034610
+ Element:  12 om               Adjustable         108.160137   59.231525
+ Element:  13 i                Adjustable         132.801053   13.688433
+ORBIT> list mass                    
+WARNING: Standard errors have been rescaled by a large reduced Chi:   7.780
+They maybe unreliable. 
+You should probably adjust your measurement errors and repeat the fit
+Total Mass =  0.285507 +-0.117611 Solar masses (41.2%)
+
+ 
+ 

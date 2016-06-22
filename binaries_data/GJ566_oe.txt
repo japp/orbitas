@@ -1,0 +1,21 @@
+#-----------------------------------------------
+# Elementos orbitales de GJ566 
+# P      Periodo (años)
+# T      Paso por el periastro (años)
+# e      Eccentricidad
+# a      Semieje mayor (seg de arco)
+# i      Inclinacion
+# OM     Posicion del nodo ascendente (Omega, grados)
+# om     Argumento del periastro (omega, grados)
+#-----------------------------------------------
+
+name        GJ566
+P           151.6                 
+T           1909.3              
+e           0.51                 
+a           4.94                 
+i           139.                 
+OM          347.             
+om          203.
+equinox     2000
+

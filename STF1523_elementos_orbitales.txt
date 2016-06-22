@@ -1,0 +1,10 @@
+# Elementos orbitales de STF1523AB - tomados de WDS
+
+oe_P = 59.878                  # Periodo (años)
+oe_T = 1935.195                # Paso por el periastro (años)
+oe_e = 0.398                  # Excentricidad
+oe_a = 2.536                  # Semieje mayor (seg de arco)
+oe_i = 122.13                  # Inclinacion de la orbita (grados)
+oe_O_node = 101.85              # Posicion del nodo ascendente (Omega, grados)
+oe_o_peri = 127.94            # Argumento del periastro (omega, grados)
+oe_equinox = 2000             # Equinoccio

@@ -1,0 +1,10 @@
+# GJ 487
+# http://ad.usno.navy.mil/wds/int4/int4_12.html#12490+6607
+#
+#
+date       | rho     | theta    | e_rho  | e_theta  |  tech   | notes
+1997.989     0.20      240.0      0.10     7.0         A        WDK2015
+2003.207     0.32      202.8      0.04     4.3         A        WDK2015
+2008.051     0.297      15.4      0.010    2.5        Cl        Jod2013
+2015.494     0.296      19.4      0.010    2.5        Cl        japp
+2016.2467    0.207      24.6      0.006    0.4        Cl        japp

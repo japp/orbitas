@@ -1,0 +1,21 @@
+#-----------------------------------------------
+# Elementos orbitales de GJ 660 - WDC 6th Spec cat
+# P      Periodo (años)
+# T      Paso por el periastro (años)
+# e      Eccentricidad
+# a      Semieje mayor (seg de arco)
+# i      Inclinacion
+# O     Posicion del nodo ascendente (Omega, grados)
+# w     Argumento del periastro (omega, grados)
+#-----------------------------------------------
+
+name        GJ660
+P           34.779
+T           1988.033
+e           0.25723
+a           0.81966
+i           32.7863
+O           135.6480
+w           231.8267
+equinox     2000
+

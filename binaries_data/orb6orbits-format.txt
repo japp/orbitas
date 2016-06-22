@@ -1,0 +1,331 @@
+
+Fourth Catalog of Interferometric Measurements of Binary Stars: Format
+
+The entries for each binary star system are comprised of two parts: an identification line containing designations from various catalogs, followed by individual measures sorted in order of observation date. Formats of these data are as follows:
+
+Identification line:
+Column   Format         Description
+
+   1     t1,a18         Epoch-2000 coordinates, to 0.1s in RA, 1" in DEC when known
+                        (HHMMSS.SS+DDMMSS.S)          
+
+   2     t21,a26        Star name #1 (usually ADS or HR number, otherwise DM or 
+                        other catalog designation)
+
+   3     t47,a26        Star name #2 (discoverer designation, Bayer, Flamsteed, or 
+                        variable star name, GJ number, or other catalog designation)
+
+   4     t73,a13        HD or DM number. Formats are 'HD 123456', 'BD+12 1234', 
+                        'CD-1212345', or 'CP-1212345'
+
+   5     t86,a3,1x,a15  Hipparcos, SAO, Tycho-2, GSC, or other designation. The first
+                        three characters indicate the catalog (G22 = GSC2.2, UC2 = UCAC2,
+                        etc.)
+
+   6     t105,a10       WDS designation or epoch-2000 coordinates in the form of the 
+                        WDS designation (HHMMM+DDMM)
+
+   7     t116,a1        General flag:
+                          I - uncertainty in catalog match for precise coordinates in 
+                              column 1
+                          N - note about object in notes file 
+                        
+   8     t118,a1        Orbit flag. Pair has a published visual or astrometric orbit
+                        in the Sixth Orbit Catalog.
+                        
+Data lines:
+Column   Format         Description
+
+   1     t2,a1          Epoch flag:
+                          : - epoch not given in paper; the date is estimated based on 
+                              comments in the text.
+                          < - no information on epoch in text. An upper limit to the date 
+                              is given, based on the date of publication.
+
+   2     t3,f9.4        Epoch of observation, given as fraction of the Besselian year 
+                        (even though they may have been given in some other form in the 
+                        original reference). The number of significant digits in the 
+                        epoch reflects the accuracy in the time as quoted in the original 
+                        source.  
+
+   3     t14,a1         Position angle flag:
+                          V - position angle is vector angle of a one-dimensional (e.g. 
+                              occultation) measure
+                          : - measure of lower accuracy
+                          ? - questionable position angle value
+
+   4     t15,f7.3       Position angle in degrees.  Position angles have occasionally been
+                        adjusted to their "proper" quadrant; it should be remembered that
+                        interferometry often yields position angle determinations with a
+                        180-degree ambiguity.
+
+   5     t23,a1         Position angle error flag:
+                          < - quoted error is upper limit             
+                          > - quoted error is lower limit  
+
+                        Note: A very small number of measures give errors of 10 degrees
+                        or more; hence a "1" or "2" in this column 
+
+   6     t24,f5.3       Position angle error (if given in the original reference).
+
+   7     t29,a1         Separation flag:
+                          < - value given is the upper limit for an unresolved measure 
+                              (usually the Rayleigh limit, a function of the telescope 
+                              aperture and filter)
+                          > - value given is a lower limit of the true separation
+                          : - measure is of lower accuracy
+                          ? - questionable measure or flag for possible duplicity
+                          D - separation is in degrees
+                          e - pair is elongated (along direction of position angle, if 
+                              given)
+                          m - separation is in milliarcseconds
+                          M - separation is in arcminutes
+                          R - pair is noted as being resolved, but no separation is given
+                          U - pair is unresolved, but no resolution limit is given
+
+                        Hipparcos non-component double star solutions and suspected 
+                        non-single stars are indicated by the following codes: 
+                          G - Hipparcos non-component double star solution 
+                              (acceleration solution)
+                          O - Hipparcos non-component double star solution 
+                              (orbit solution)
+                          S - Hipparcos suspected non-single
+                          V - Hipparcos non-component double star solution 
+                              (variability-induced mover)
+                          X - Hipparcos non-component double star solution 
+                              (stochastic solution)
+
+   8     t30,f10.6      Separation in arcseconds.  For one-dimensional measures this value 
+                        is the vector, rather than true separation.  
+
+   9     t41,a1         Separation error flag: 
+                          V - published qualitative rating of very poor
+                          P - published qualitative rating of poor
+                          F - published qualitative rating of fair
+                          G - published qualitative rating of good     
+                          < - quoted error is an upper limit             
+                          > - quoted error is a lower limit  
+
+                        Note: occasionally a paper will quote a range in separation over 
+                        which an object is unresolved. In this case (and if the upper 
+                        limit is less than 10") columns 7 and 8 will indicate the lower 
+                        limit of the separation range, while columns 9 and 10 will 
+                        indicate the upper limit, with a ">" flag in column 9.
+
+  10     t42,f8.6       Separation error (if given in the original reference).
+
+  11     t51,a1         Primary magnitude flag. 
+                          : - uncertain magnitude estimate
+                          > - primary is fainter than indicated magnitude
+                          t - value listed is combined magnitude of pair
+                          v - primary is variable in magnitude
+
+  12     t52,f6.3       Primary magnitude. 
+
+  13     t59,a1         Primary magnitude error flag:
+                          < - error is less than indicated value
+
+  14     t60,f5.3       Primary magnitude error.
+
+  15     t66,a1         Secondary magnitude flag:
+                          : - uncertain magnitude estimate
+                          < - secondary is brighter than indicated magnitude
+                          > - secondary is fainter than indicated magnitude
+                          q - author does not gives magnitude information, but notes
+                              that reduction technique used (e.g., triple correlation)
+                              yields unambiguous quadrant determination
+                          s - magnitude is of secondary despite column 12 being blank
+                          v - secondary is variable in magnitude
+
+  16     t67,f6.3       Secondary magnitude or, if col 12 is blank, magnitude difference
+
+  17     t74,a1         Secondary magnitude error flag:
+                          < - error is less than indicated value
+                          
+  18     t75,f5.3       Secondary magnitude or magnitude difference error.
+
+  19     t83,f4.0       Filter effective wavelength (in nanometers unless otherwise noted)
+
+  20     t87,f4.0       Filter FWHM (in nanometers unless otherwise noted)
+
+  21     t91,a1         Filter flag:
+                          a - average of two or more different filters. Filter columns now
+                              indicate mean wavelength and sigma of the filters averaged.
+                          c - filter effective wavelength and FWHM are in centimeters
+                          m - filter effective wavelength and FWHM are in millimeters
+                          M - filter effective wavelength and FWHM are in meters
+                          n - no filter used in observation
+                          u - filter effective wavelength and FWHM are in microns     
+                          x - x-ray band 
+                          ? - filter information is uncertain                       
+
+  22     t93,f4.1,a1    Telescope aperture or baseline of multiple-aperture array
+                        (in meters, unless noted)  
+
+  23     t97,a1         Telescope aperture code: 
+                          k - long-baseline interferometer, baseline in kilometers
+
+  24     t99,i2         "Number of nights". Occasionally published measures are averages 
+                        of more than one observation. This practice was more common in 
+                        earlier publications; the inclusion of data obtained by eyepiece 
+                        interferometry prompted the inclusion of this column. Relative 
+                        weighting of measures is typically scaled by the square root of 
+                        this value.
+
+  25     t103,a8        Code for the original reference.  Code format is the WDS 
+                        Discoverer Designation code (usually the first three letters of 
+                        the first author's name), followed by the publication year. An 
+                        "a", "b", ...  follow if necessary to differentiate publications
+                        by more prolific authors. The list of references is given here.
+
+  26     t112,a3        Technique code. Codes have been merged with those in the WDS and 
+                        all other USNO double star catalogs. The list below includes all 
+                        codes used in these catalogs, even if not in the interferometric 
+                        catalog (old WDS and interferometric catalog codes are included as 
+                        well):
+
+                        new old    description
+
+                        A   U    = adaptive optics
+                        Ac  Uch  = CHARA adaptive optics
+                        Ad  Usd  = adaptive optics spectral deconvolution technique
+                        Ag  Ula  = laser-guided AO
+                        Al  Usi  = adaptive optics imaging, keeping only selected images 
+                                   ("lucky imaging")
+                        Am  Uam  = adaptive optics with aperture mask
+                        Ao  Uco  = adaptive optics coronagraph
+                        As  Uds  = AO + dark speckle coronagraph
+                        Aw  Ucw  = adaptive optics with coronagraph and "well-corrected 
+                                   subaperture"
+
+                        C   F    = CCD or other two-dimensional electronic imaging
+                        Ca  W    = Area scanner                             
+                        Cc  Fic  = IR coronagraph
+                        Ce  L    = Electronographic camera                  
+                        Ci  Fir  = IR direct imaging
+                        Cl  Fsi  = short-exposure CCD imaging, keeping only selected 
+                                   images ("lucky imaging")
+                        Cp  Fip  = IR imaging polarimetry
+                        Cs  Fss  = IR one-dimensional slit scanning
+                        Cu  F    = USNO CCD imaging (speckle-style reduction)     
+
+                        D   D    = Heliometer                               
+
+                        E   E    = Wide-field CCD or other two-dimensional electronic 
+                                   imaging
+                        E2  E2m  = 2MASS (Two Micron All-Sky Survey)
+                        Ed  Ede  = DENIS (Deep Near-Infrared Survey)
+                        Ek  Euk  = UKIDSS (UKIRT Infrared Deep Sky Survey)
+                        Es  Esd  = SDSS (Sloan Digital Sky Survey)
+                        Eu  Eu3  = UCAC3                              
+                        Eu  Eu4  = UCAC4                          
+                        Ey       = Yale SPM (Southern Proper Motion) Survey
+
+                        H   T    = Hipparcos/Tycho, HST, or other space-based technique
+                        H   Q    = Hipparcos/Tycho, HST, or other space-based technique
+                        Ha  Qac  = HST + ACS
+                        Hc  Ech  = Chandra
+                        He  Eei  = Einstein
+                        Hf  Qfg  = HST + Fine Guidance Sensor
+                        Hh  Thp  = Hipparcos
+                        Hi  Qir  = Spitzer Space Telescope + IRAC (Infrared Array Camera)
+                        Hk       = Kepler
+                        Hm  Qmi  = Spitzer Space Telescope + MIPS (Multiband Imaging 
+                                   Photometer for Spitzer)
+                        Hn  Qni  = HST + NICMOS IR direct imaging
+                        Ho  Qfo  = HST + Faint Object Camera
+                        Hp  Qpc  = HST + WFPC2 Planetary Camera or Wide Field Camera 3
+                        Hs  Qst  = HST + STIS
+                        Ht  Tty  = Tycho
+                        Hw  Qwi  = WISE (Wide-field Infrared Survey Explorer) satellite 
+                                   (IR imaging)
+                        Hx  Qsx  = Spitzer Space Telescope + SpeX spectrometer and 
+                                   slit-viewing camera
+                        Hz       = XMM Newton satellite
+
+                        I   P    = interferometric technique
+                        Ig  Pgi  = phase grating interferometer  
+                        Im  Pmi  = Michelson interferometer
+
+                        J   J    = visual interferometer
+                        Jm  Jmw  = Mount Wilson 100-inch telescope rotating interferometer 
+                                   (Anderson, Merrill)
+                        Jp  Jpe  = Mount Wilson 20-foot beam interferometer (Pease)
+
+                        K   K    = long-baseline visual/IR/radio interferometer
+                        K2  Kce  = CERGA 2-telescope interferometer
+                        Ka  Kva  = VLTI/AMBER
+                        Kb  Kbi  = BIMA 
+                        Kc  Kch  = CHARA Array
+                        Ke  Kev  = European VLBI network
+                        Kf  Kcs  = CHARA Array (separated fringe packet data)
+                        Kg  Kgl  = global VLBI array
+                        Ki  Kio  = IOTA 
+                        Kk  Kki  = Keck interferometer
+                        Kl  Kvl  = VLA
+                        Kl  Kvb  = VLBA
+                        Km  Km3  = Mark III 
+                        Kn  Knp  = NPOI (Navy Prototype/Precision Optical Interferometer)
+                        Kp  Kpt  = PTI (Palomar Testbed Interferometer)
+                        Kr  Kap  = radio/IR aperture synthesis technique
+                        Ks  Ksu  = SUSI (Sydney University Stellar Interferometer)
+                        Ku  Kpu  = Pulkovo Stellar Interferometer
+
+                        M   A    = micrometry technique
+                        Ma  A    = micrometer with refractor
+                        Mb  B    = micrometer with reflector
+                        Mc  C    = Comparison image micrometer
+                        Md  N    = Visual measures with a double-image micrometer
+                        Mg       = illuminated-reticle micrometer 
+                                   (e.g. Celestron Micro-Guide)
+                        Mr  R    = RGO use of micrometer plus comparison image micrometer 
+                                   on same star        
+
+                        O   O    = occultation 
+                        O   Occ  = occultation 
+
+                        P   G    = photographic technique
+                        Pa  G    = photographic, with astrograph
+                        Pb  G    = USNO-B astrograph data
+                        Pc  Gac  = Astrographic Catalog 
+                        Pe  G    = ESO Schmidt astrograph
+                        Pk  Gag  = AGK Catalog
+                        Po  H    = photographic, with medium or long-focus technique or 
+                                   with ocular enlargement
+                        Pp  Gp1  = Palomar Observatory Sky Survey (POSS-I)     
+                                   1948-1958, 48in/1.2m Schmidt
+                        Pp  Gp2  = Palomar Observatory Sky Survey (POSS-II)    
+                                   1985-1999, 48in/1.2m Schmidt
+                        Pu  Guk  = UK Schmidt Southern Survey                  
+                                   1974-1987, 48in/1.2m Schmidt
+
+                        S   Spe  = speckle interferometric technique
+                        Sa  Sam  = aperture masking technique (MAPPIT, etc.)
+                        Sb  Sbi  = bispectrum speckle interferometric technique
+                        Sc  Sch  = CHARA speckle  
+                        Si  Sir  = IR speckle  
+                        Sp  Spo  = speckle polarimetry
+                        Ss  Ssa  = shift-and-add technique
+                        St  S    = Tokovinin speckle camera (SOAR)
+                        Su  Sus  = USNO speckle  
+
+                        T   M    = Transit circle / Meridian circle
+                        Tm  I    = "Eyepiece micrometer" transit/chronometric technique
+
+                        V        = visual estimate
+
+                        X        = spectroscopic technique 
+                        Xg  X    = Visual estimate made with an objective grating
+                        Xh  Zhr  = high-resolution spectroscopy
+                        Xl  Zlr  = low-resolution spectroscopy
+                        Xr  Zre  = resolved spectroscopy
+                        Xs  Zsp  = spectrophotometry      
+
+                        Z   Z    = photometric technique
+                        Z   Zpt  = photometer
+                        Zc       = CCD photometry
+                        Zd  V    = Photocell with diaphragm in focal plane
+                        Zp  Z    = Visual photometry with a double-image or polarizing 
+                                   photometer
+                        Zw  Y    = Wedge photometer
+

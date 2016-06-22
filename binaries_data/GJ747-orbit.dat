@@ -1,0 +1,40 @@
+! GJ 747
+! 
+! Medidas del 6th orbit catalog y Astralux+Fastcam
+! Fichero para ajustar orbita con ORBIT
+
+EQUINOX     2000.000        
+EPOCH            Y2000.0         0.0000  Fixed           
+P                   Y5.776       1.0000  Adjustable      
+T0               Y1996.9         1.0000  Adjustable      
+Ecc                  0.274       0.1     Adjustable      
+as                   0.9201      0.2     Adjustable      
+OM                  85.09       10       Adjustable      
+om                  330.89      10       Adjustable      
+i                   77.299      10       Adjustable    
+
+! Paralaje y error (arcsec)
+PAR    0.123 0.004
+
+
+
+! Medidas astrometricas
+!          Frac. anho    rho      theta      err_rho   err_theta
+rho-theta  Y1986.4505    0.148     290.6      0.006    1.1 
+rho-theta  Y1986.6511    0.089     297.4   
+rho-theta  Y1986.6565    0.102     294.2      
+rho-theta  Y1987.3779    0.141      53.0       
+rho-theta  Y1987.3779    0.141      53.0       
+rho-theta  Y1999.6417    0.304     256.1      0.004    0.1 
+rho-theta  Y1999.6444    0.298     255.9      0.001    0.1 
+rho-theta  Y1999.9004    0.331     258.6      0.001    0.1 
+rho-theta  Y2000.2749    0.3542    262.3      0.0004   0.1 
+rho-theta  Y2000.8751    0.325     268.1      0.001    0.3 
+rho-theta  Y2001.7576    0.134     288.0      0.001    0.5 
+rho-theta  Y2001.7576    0.133     287.9      0.001    0.3 
+rho-theta  Y2001.7576    0.134     287.5      0.003    1.1 
+rho-theta  Y2008.527     0.193      74.       0.010    4.     ! Astralux
+rho-theta  Y2008.546     0.197     258.5       
+rho-theta  Y2009.349     0.148     109.       0.010    5.     ! Astralux
+rho-theta  Y2010.592     0.18      245.20     
+

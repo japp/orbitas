@@ -1,0 +1,22 @@
+#-----------------------------------------------
+# Elementos orbitales de GJ 804 - WDC 6th Spec cat
+# P      Periodo (años)
+# T      Paso por el periastro (años)
+# e      Eccentricidad
+# a      Semieje mayor (seg de arco)
+# i      Inclinacion
+# O     Posicion del nodo ascendente (Omega, grados)
+# w     Argumento del periastro (omega, grados)
+#-----------------------------------------------
+
+name        GJ804
+P           14.5
+T           1999.96
+e           -0.817
+a           0.524
+i           103.04
+O           66.67
+w           86.66
+equinox     2000
+
+

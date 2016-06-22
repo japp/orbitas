@@ -1,0 +1,11 @@
+# Elementos orbitales de Gl473 según Torres et al (1999)
+#
+15.643             # Periodo (años)
+1992.297           # Paso por el periastro (años)
+0.295             # Excentricidad
+0.926              # Semieje mayor (seg de arco)
+103.000             # Inclinacion de la orbita (grados)
+143.480             # Posicion del nodo ascendente (Omega, grados)
+347.200            # Argumento del periastro (omega, grados)
+2000               # Equinoccio
+

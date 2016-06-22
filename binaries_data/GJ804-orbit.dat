@@ -1,0 +1,32 @@
+! GJ 804
+! 
+! Medidas del 6th orbit catalog y Astralux+Fastcam
+! Fichero para ajustar orbita con ORBIT
+
+
+PAR 47.43E-3 2.12E-3
+
+EQUINOX            2000.0
+EPOCH             51544.5          0.0      Fixed           
+P                  6000.2        400.0   Adjustable      
+T0                51500.4        600.0   Adjustable      
+Ecc                  0.4           0.2      Adjustable      
+as                   0.3         0.05      Adjustable      
+OM                  64.          40       Adjustable      
+om                  86.           40       Adjustable      
+i                   118.9         70       Adjustable   
+
+
+! Medidas astrometricas
+!          Frac. anho    rho      theta      err_rho   err_theta
+rho-theta  Y1991.234     0.230     270.       0.01     8.0
+rho-theta  Y2000.8779    0.233     153.9      0.008    0.3   
+rho-theta  Y2001.7605    0.218     136.7      0.001    0.3 
+rho-theta  Y2006.4436    0.258     76.6       0.001     0.8 
+rho-theta  Y2008.649     0.337     52.8       0.008     2.2 
+rho-theta  Y2008.816     0.332     55.4       0.008    1.5 
+rho-theta  Y2009.347     0.334     44.0       0.008    2.3
+rho-theta  Y2013.503     0.283     11.0       0.008    2.0 
+rho-theta  Y2015.493     0.210    334.7       0.008    2.5 
+
+

@@ -1,0 +1,20 @@
+#-----------------------------------------------
+# Elementos orbitales de GJ747 - WDC 6th Spec cat 
+# P      Periodo (años)
+# T      Paso por el periastro (años)
+# e      Eccentricidad
+# a      Semieje mayor (seg de arco)
+# i      Inclinacion
+# O     Posicion del nodo ascendente (Omega, grados)
+# w     Argumento del periastro (omega, grados)
+#-----------------------------------------------
+
+name        GJ747
+P           5.776988                  
+T           1996.957              
+e           0.274                 
+a           0.2881                 
+i           77.3                 
+O           85.1             
+w           330.9
+equinox     2000

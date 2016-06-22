@@ -1,0 +1,21 @@
+#-----------------------------------------------
+# Elementos orbitales de GJ747 - Nueva orbita con ORBIT
+# P      Periodo (años)
+# T      Paso por el periastro (años)
+# e      Eccentricidad
+# a      Semieje mayor (seg de arco)
+# i      Inclinacion
+# O     Posicion del nodo ascendente (Omega, grados)
+# w     Argumento del periastro (omega, grados)
+#-----------------------------------------------
+
+name        GJ747
+P           5.75                  
+T           1991.22              
+e           0.252                 
+a           0.2915                 
+i           77.3                 
+O           84.723             
+w           332.64
+equinox     2000
+
